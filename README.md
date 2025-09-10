@@ -1,6 +1,9 @@
 # ShaktiAI-Emergency-Alert-System
 ShaktiAI is a smart SOS system using AI-powered gesture, facial, and voice detection to identify emergencies. Alerts are sent to nearby volunteers, and an Admin Dashboard tracks incidents and responses in real-time, enabling fast, efficient personal safety monitoring.
 
+# Repository Links 
+    Shakti Ai (UI and Functions) - https://github.com/sakshipatole28/ShaktiAI-Emergency-Alert-System/tree/main
+    AI Models(Gesture and Facial) - 
 # ShaktiAI – Prototype (UI + Admin)
 
 ⚠️ *This project is part of a **hackathon**. Code is open for learning and demo purposes only. All IP is retained by the authors for future publication.*

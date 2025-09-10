@@ -1,9 +1,9 @@
 # ShaktiAI-Emergency-Alert-System
 ShaktiAI is a smart SOS system using AI-powered gesture, facial, and voice detection to identify emergencies. Alerts are sent to nearby volunteers, and an Admin Dashboard tracks incidents and responses in real-time, enabling fast, efficient personal safety monitoring.
 
-# ⚠️ ShaktiAI – Prototype (UI + Admin Only)
+# ShaktiAI – Prototype (UI + Admin)
 
-⚠️ This project is part of a **hackathon**. Code is open for learning and demo purposes only. All IP is retained by the authors for future publication.
+⚠️ *This project is part of a **hackathon**. Code is open for learning and demo purposes only. All IP is retained by the authors for future publication.*
 
 This repository contains a **prototype** of the ShaktiAI system.  
 It includes the **mobile app (Pilgrim & Volunteer UI)** and the **Admin dashboard**, but **AI models and MongoDB Atlas database are not yet connected**.  
@@ -54,88 +54,6 @@ The goal of this repo is to showcase the **user flow, offline-first concept, and
 
 ---
 
-## 📂 Project Structure
-
-shaktiai-mvp/
-├─ UPDATE_SUMMARY.md
-├─ VS_CODE_SETUP.md
-├─ .vscode/                # VS Code settings
-│  ├─ launch.json
-│  ├─ settings.json
-│  ├─ tasks.json
-│
-├─ admin-dashboard/        # React.js Admin Dashboard (mocked)
-│  ├─ .gitignore
-│  ├─ package.json
-│  ├─ tsconfig.json
-│  ├─ public/
-│  │  ├─ favicon.ico
-│  │  ├─ index.html
-│  │  ├─ logo192.png
-│  │  ├─ logo512.png
-│  │  ├─ manifest.json
-│  │  ├─ robots.txt
-│  ├─ src/
-│  │  ├─ App.tsx
-│  │  ├─ App.css
-│  │  ├─ index.tsx
-│  │  ├─ index.css
-│  │  ├─ logo.svg
-│  │  ├─ reportWebVitals.ts
-│  │  ├─ setupTests.ts
-│  │  ├─ react-app-env.d.ts
-│
-├─ demo/                   # Demo scripts & docs
-│  ├─ QUICK_DEMO.md
-│  ├─ run_demo.sh
-│
-├─ docs/                   # Documentation
-│  ├─ ADMIN_DASHBOARD_DEMO.md
-│
-├─ mobile/                 # React Native Mobile App (Pilgrim + Volunteer roles)
-│  ├─ app.json
-│  ├─ App.tsx
-│  ├─ App_Backup.tsx
-│  ├─ App_Minimal.tsx
-│  ├─ App_Original.tsx
-│  ├─ App_Simple.tsx
-│  ├─ index.ts
-│  ├─ package.json
-│  ├─ tsconfig.json
-│  ├─ .expo/
-│  │  ├─ devices.json
-│  │  ├─ README.md
-│  │  ├─ settings.json
-│  ├─ assets/
-│  │  ├─ adaptive-icon.png
-│  │  ├─ favicon.png
-│  │  ├─ icon.png
-│  │  ├─ splash-icon.png
-│  │  ├─ data/
-│  │  │  ├─ incidents_sample.json
-│  │  │  ├─ volunteer_locations_sample.json
-│  │  ├─ models/
-│  │  │  ├─ gesture_v1_metadata.json
-│  │  │  ├─ voice_scream_v1_metadata.json
-│  ├─ src/
-│  │  ├─ components/
-│  │  ├─ screens/
-│  │  │  ├─ LoginScreen.tsx
-│  │  │  ├─ PilgrimDashboard.tsx
-│  │  │  ├─ RegistrationScreen.tsx
-│  │  │  ├─ RoleSelectionScreen.tsx
-│  │  │  ├─ SimpleLogin.tsx
-│  │  │  ├─ SimplePilgrimDashboard.tsx
-│  │  │  ├─ SimpleRoleSelection.tsx
-│  │  │  ├─ SimpleVolunteerDashboard.tsx
-│  │  │  ├─ VolunteerDashboard.tsx
-│  │  ├─ services/
-│  │  │  ├─ AIDetectionService.ts
-│  │  │  ├─ AlertService.ts
-│  │  │  ├─ AuthService.ts
-
----
-
 ## ⚙️ Setup Instructions
 
 ### 1. Mobile App
@@ -149,7 +67,7 @@ npx expo start --host lan
 
   -Trigger SOS or mock AI alerts for demo.
 
-2. Admin Dashboard
+### 2. Admin Dashboard
 bash
 Copy code
 cd shaktiai-mvp/admin-dashboard
@@ -176,7 +94,7 @@ npm start
 
 Placeholder code for AI & DB integration
 
-## 📞 **Final Demo Checklist**
+## **Final Demo Checklist**
 
 **Before Demo**:
 - [ ] Phone 1: Expo Go installed
@@ -185,13 +103,13 @@ Placeholder code for AI & DB integration
 - [ ] Browser: Ready for localhost:3000
 
 **During Demo**:
-- [ ] Show mobile QR code and admin dashboard simultaneously
+- [ ] Shows mobile QR code and admin dashboard simultaneously
 - [ ] Demonstrate Pilgrim → Alert → Volunteer → Response flow
 - [ ] Highlight logout functionality and professional UX
 - [ ] Emphasize real-time coordination and social impact
 
 
-✅ Roadmap (Next Steps)
+### **Roadmap (Next Steps)**
 1. Integrate TensorFlow Lite + MediaPipe gesture model in app
 
 2. Add motion inactivity (faint detection) model

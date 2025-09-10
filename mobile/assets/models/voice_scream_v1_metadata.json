@@ -1,0 +1,62 @@
+{
+  "modelInfo": {
+    "name": "voice_scream_v1",
+    "version": "1.0.0",
+    "type": "audio_classification",
+    "framework": "tensorflow_lite",
+    "created": "2024-01-01T00:00:00Z",
+    "size": "1.8MB"
+  },
+  "inputSpec": {
+    "shape": [1, 16000],
+    "dataType": "float32",
+    "sampleRate": 16000,
+    "duration": "1s",
+    "channels": 1
+  },
+  "outputSpec": {
+    "shape": [1, 4],
+    "dataType": "float32",
+    "labels": [
+      "scream",
+      "help_call",
+      "normal_speech",
+      "background_noise"
+    ]
+  },
+  "performance": {
+    "accuracy": 0.91,
+    "precision": 0.89,
+    "recall": 0.90,
+    "f1Score": 0.895,
+    "inferenceTime": "25ms"
+  },
+  "trainingData": {
+    "samples": 15000,
+    "categories": 4,
+    "augmentation": true,
+    "validationSplit": 0.2,
+    "noiseVariations": 12
+  },
+  "deployment": {
+    "quantization": "int8",
+    "optimization": "mobile_optimized",
+    "platforms": ["android", "ios"],
+    "minSDK": 21
+  },
+  "usage": {
+    "confidenceThreshold": 0.8,
+    "windowSize": 1000,
+    "overlapRatio": 0.5,
+    "preprocessing": "mfcc_normalization"
+  },
+  "audioProcessing": {
+    "preEmphasis": 0.97,
+    "frameLength": 512,
+    "frameStep": 256,
+    "fftLength": 512,
+    "numMelBins": 40,
+    "lowerEdgeHertz": 80,
+    "upperEdgeHertz": 8000
+  }
+}

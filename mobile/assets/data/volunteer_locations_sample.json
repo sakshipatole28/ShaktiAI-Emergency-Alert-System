@@ -1,0 +1,82 @@
+{
+  "volunteers": [
+    {
+      "id": "vol_001",
+      "name": "Priya Sharma",
+      "phone": "+91-9123456789",
+      "location": {
+        "latitude": 30.7333,
+        "longitude": 76.7794,
+        "address": "Sector 17, Chandigarh"
+      },
+      "status": "available",
+      "skills": ["first_aid", "crowd_management"],
+      "responseTime": 5,
+      "rating": 4.8
+    },
+    {
+      "id": "vol_002",
+      "name": "Suresh Gupta",
+      "phone": "+91-8234567890",
+      "location": {
+        "latitude": 30.7411,
+        "longitude": 76.7864,
+        "address": "Bus Stand, Chandigarh"
+      },
+      "status": "busy",
+      "skills": ["medical_assistance", "emergency_response"],
+      "responseTime": 3,
+      "rating": 4.9
+    },
+    {
+      "id": "vol_003",
+      "name": "Kavita Sharma",
+      "phone": "+91-7345678901",
+      "location": {
+        "latitude": 30.7194,
+        "longitude": 76.7646,
+        "address": "Railway Station, Chandigarh"
+      },
+      "status": "available",
+      "skills": ["communication", "coordination"],
+      "responseTime": 4,
+      "rating": 4.7
+    },
+    {
+      "id": "vol_004",
+      "name": "Rajesh Kumar",
+      "phone": "+91-6456789012",
+      "location": {
+        "latitude": 30.7588,
+        "longitude": 76.8125,
+        "address": "Rock Garden, Chandigarh"
+      },
+      "status": "available",
+      "skills": ["first_aid", "navigation"],
+      "responseTime": 6,
+      "rating": 4.6
+    },
+    {
+      "id": "vol_005",
+      "name": "Meera Devi",
+      "phone": "+91-5567890123",
+      "location": {
+        "latitude": 30.7505,
+        "longitude": 76.7555,
+        "address": "City Centre, Chandigarh"
+      },
+      "status": "available",
+      "skills": ["crowd_control", "emergency_response"],
+      "responseTime": 4,
+      "rating": 4.8
+    }
+  ],
+  "metadata": {
+    "totalVolunteers": 5,
+    "availableVolunteers": 4,
+    "busyVolunteers": 1,
+    "averageRating": 4.76,
+    "averageResponseTime": 4.4,
+    "lastUpdated": 1700000000000
+  }
+}

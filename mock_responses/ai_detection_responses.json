@@ -1,0 +1,102 @@
+{
+  "gestureDetection": {
+    "helpGesture": {
+      "confidence": 0.95,
+      "boundingBox": {
+        "x": 120,
+        "y": 80,
+        "width": 200,
+        "height": 250
+      },
+      "keypoints": [
+        {"name": "wrist", "x": 150, "y": 200, "confidence": 0.9},
+        {"name": "palm", "x": 180, "y": 180, "confidence": 0.95},
+        {"name": "fingers", "x": 200, "y": 120, "confidence": 0.85}
+      ],
+      "message": "Help gesture detected with high confidence",
+      "alertRecommendation": true
+    },
+    "normalGesture": {
+      "confidence": 0.3,
+      "message": "Normal gesture - no alert needed",
+      "alertRecommendation": false
+    },
+    "wavingGesture": {
+      "confidence": 0.75,
+      "message": "Waving detected - potential false positive",
+      "alertRecommendation": false
+    }
+  },
+  "voiceDetection": {
+    "screamDetected": {
+      "confidence": 0.92,
+      "audioFeatures": {
+        "amplitude": 85,
+        "frequency": 2500,
+        "duration": 1.2,
+        "pitch": "high"
+      },
+      "message": "Distress scream detected",
+      "alertRecommendation": true
+    },
+    "helpCall": {
+      "confidence": 0.88,
+      "audioFeatures": {
+        "amplitude": 70,
+        "frequency": 1200,
+        "duration": 2.1,
+        "pitch": "medium"
+      },
+      "message": "Help call detected in voice",
+      "alertRecommendation": true
+    },
+    "normalSpeech": {
+      "confidence": 0.15,
+      "message": "Normal speech pattern detected",
+      "alertRecommendation": false
+    },
+    "backgroundNoise": {
+      "confidence": 0.05,
+      "message": "Background noise - no speech detected",
+      "alertRecommendation": false
+    }
+  },
+  "alertScenarios": [
+    {
+      "id": "scenario_1",
+      "title": "Pilgrim in Distress - Gesture",
+      "description": "Pilgrim raises hand in help gesture during crowded situation",
+      "trigger": "gesture",
+      "expectedResponse": "immediate_alert",
+      "mockData": {
+        "pilgrimName": "Test User",
+        "location": "Demo Location",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "scenario_2", 
+      "title": "Emergency Scream Detection",
+      "description": "Loud scream detected indicating distress",
+      "trigger": "voice",
+      "expectedResponse": "immediate_alert",
+      "mockData": {
+        "pilgrimName": "Test User",
+        "location": "Demo Location",
+        "confidence": 0.92
+      }
+    },
+    {
+      "id": "scenario_3",
+      "title": "SOS Button Press",
+      "description": "Manual SOS button activation by pilgrim",
+      "trigger": "sos",
+      "expectedResponse": "immediate_alert",
+      "mockData": {
+        "pilgrimName": "Test User",
+        "location": "Demo Location",
+        "confidence": 1.0
+      }
+    }
+  ]
+}

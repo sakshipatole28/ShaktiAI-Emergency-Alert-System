@@ -1,0 +1,52 @@
+{
+  "modelInfo": {
+    "name": "gesture_v1",
+    "version": "1.0.0",
+    "type": "gesture_recognition",
+    "framework": "tensorflow_lite",
+    "created": "2024-01-01T00:00:00Z",
+    "size": "2.1MB"
+  },
+  "inputSpec": {
+    "shape": [1, 224, 224, 3],
+    "dataType": "uint8",
+    "colorSpace": "RGB",
+    "normalization": "0-255"
+  },
+  "outputSpec": {
+    "shape": [1, 5],
+    "dataType": "float32",
+    "labels": [
+      "help_gesture",
+      "normal",
+      "waving",
+      "pointing",
+      "other"
+    ]
+  },
+  "performance": {
+    "accuracy": 0.94,
+    "precision": 0.92,
+    "recall": 0.93,
+    "f1Score": 0.925,
+    "inferenceTime": "45ms"
+  },
+  "trainingData": {
+    "samples": 10000,
+    "categories": 5,
+    "augmentation": true,
+    "validationSplit": 0.2
+  },
+  "deployment": {
+    "quantization": "int8",
+    "optimization": "edge_tpu_compatible",
+    "platforms": ["android", "ios"],
+    "minSDK": 21
+  },
+  "usage": {
+    "confidenceThreshold": 0.7,
+    "nmsThreshold": 0.5,
+    "maxDetections": 1,
+    "preprocessing": "resize_crop_normalize"
+  }
+}

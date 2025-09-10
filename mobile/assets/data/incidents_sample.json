@@ -1,0 +1,74 @@
+{
+  "incidents": [
+    {
+      "id": "inc_001",
+      "type": "sos",
+      "pilgrimName": "Ramesh Kumar",
+      "pilgrimPhone": "+91-9876543210",
+      "location": {
+        "latitude": 30.7333,
+        "longitude": 76.7794,
+        "address": "Sector 17, Chandigarh"
+      },
+      "timestamp": 1700000000000,
+      "message": "Emergency SOS button pressed - immediate assistance needed!",
+      "status": "resolved",
+      "acknowledgedBy": "Volunteer Priya Sharma",
+      "responseTime": 180
+    },
+    {
+      "id": "inc_002",
+      "type": "gesture",
+      "pilgrimName": "Anjali Devi",
+      "pilgrimPhone": "+91-8765432109",
+      "location": {
+        "latitude": 30.7194,
+        "longitude": 76.7646,
+        "address": "Railway Station, Chandigarh"
+      },
+      "timestamp": 1700001000000,
+      "message": "Emergency gesture detected - help signal recognized!",
+      "status": "resolved",
+      "acknowledgedBy": "Volunteer Suresh Gupta",
+      "responseTime": 240
+    },
+    {
+      "id": "inc_003",
+      "type": "voice",
+      "pilgrimName": "Manoj Singh",
+      "pilgrimPhone": "+91-7654321098",
+      "location": {
+        "latitude": 30.7411,
+        "longitude": 76.7864,
+        "address": "Bus Stand, Chandigarh"
+      },
+      "timestamp": 1700002000000,
+      "message": "Distress call detected - scream/call for help identified!",
+      "status": "acknowledged",
+      "acknowledgedBy": "Volunteer Kavita Sharma",
+      "responseTime": null
+    },
+    {
+      "id": "inc_004",
+      "type": "inactivity",
+      "pilgrimName": "Lakshmi Bai",
+      "pilgrimPhone": "+91-6543210987",
+      "location": {
+        "latitude": 30.7588,
+        "longitude": 76.8125,
+        "address": "Rock Garden, Chandigarh"
+      },
+      "timestamp": 1700003000000,
+      "message": "No movement detected for extended period - welfare check needed!",
+      "status": "active",
+      "responseTime": null
+    }
+  ],
+  "summary": {
+    "totalIncidents": 4,
+    "activeIncidents": 1,
+    "resolvedIncidents": 2,
+    "acknowledgedIncidents": 1,
+    "averageResponseTime": 210
+  }
+}

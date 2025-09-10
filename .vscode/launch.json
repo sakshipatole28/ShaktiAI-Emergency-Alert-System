@@ -1,0 +1,28 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug React Native Android",
+      "cwd": "${workspaceFolder}/mobile",
+      "type": "reactnative",
+      "request": "launch",
+      "platform": "android"
+    },
+    {
+      "name": "Debug React Native iOS",
+      "cwd": "${workspaceFolder}/mobile", 
+      "type": "reactnative",
+      "request": "launch",
+      "platform": "ios"
+    },
+    {
+      "name": "Debug Admin Dashboard",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/admin-dashboard/src/App.tsx",
+      "cwd": "${workspaceFolder}/admin-dashboard",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["start"]
+    }
+  ]
+}
